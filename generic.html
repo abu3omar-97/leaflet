@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Generic - Solid State by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="../leaflet/src/leaflet-areaselect.css" />
+  </head>
+  <body class="is-preload" onLoad="initGeolocation();">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1><a href="index.html">Solid State</a></h1>
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+      <!-- Menu -->
+      <nav id="menu">
+        <div class="inner">
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">Generic</a></li>
+            <li><a href="elements.html">Elements</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li>
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
+      </nav>
+
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <header>
+          <div class="inner">
+            <h2>Map</h2>
+            <p>Phasellus non pulvinar erat. Fusce tincidunt nisl eget ipsum.</p>
+          </div>
+        </header>
+
+        <!-- Content -->
+        <div class="wrapper" style="height: 150vh">
+          <div class="inner">
+            <div style="width: 100%; height: 100vh">
+              <div style="margin-bottom: 5px;">
+                <label for="search" style="display: inline">Search:</label>
+                <input
+                  type="text"
+                  style="width: 200px; display: inline"
+                  id="search"
+                />
+                <button id="remove">Remove</button>
+              </div>
+
+              <div id="map"></div>
+              <div id="">
+
+                <div class="locations" style="display: inline;">
+                  <h4>Current Location</h4>
+                  Long:
+                  <input
+                    type="text"
+                    style="width: 200px; display: inline"
+                    id="currentLong"
+                    disabled
+                  />
+                  Lat:
+                  <input
+                    type="text"
+                    style="width: 200px; display: inline"
+                    id="currentLat"
+                    disabled
+                  />
+                </div>
+	
+                <div class="locations" style="display: inline;">
+                  <h4>Destination</h4>
+                  Long:
+                  <input
+                    type="text"
+                    style="width: 200px; display: inline"
+                    id="destLong"
+                  />
+                  Lat:
+                  <input
+                    type="text"
+                    style="width: 200px; display: inline"
+                    id="destLat"
+                  />
+                </div>
+              </div>
+
+	<div class="locations" style="display: inline;">
+		<h4>Area</h4>
+
+		<div id="area">
+			<div >
+				South west:
+				<input type="text" class="sw"  style="width: 200px; display: inline">
+				North east:
+				<input type="text" class="ne"  style="width: 200px; display: inline">	
+			</div>
+	</div>
+
+		<style>
+			h4{
+				margin-bottom: 2px;
+    			margin-top: 20px;
+			}
+		</style>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+              <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+              <script src="../leaflet/src/leaflet-areaselect.js"></script>
+			  <script src="../leaflet/src/leaflet-search.js"></script>
+			  <script src="./assets/js/myFunctions.js"></script>
+			  <link rel="stylesheet" href="../leaflet/src/leaflet-search.css" />
+			  
+
+            
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="inner">
+          <ul class="copyright">
+            <li>&copy;  Inc. All rights reserved.</li>
+            <li>Design: <a href="http:/">HELLO</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
